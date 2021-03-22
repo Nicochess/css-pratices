@@ -1,0 +1,35 @@
+.topnav{
+    background-color: gray;
+
+    padding: 0 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.topnav-image{
+    width: 70px;
+}
+
+.topnav-list{
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.topnav-list a{
+    color: white;
+    padding: 25px;
+
+    text-decoration: none;
+    font-family: sans-serif;
+}   
+
+.topnav-list a:hover{
+    background: darkgray;
+}
