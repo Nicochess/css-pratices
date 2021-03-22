@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+body{
+    margin: 0;
+}
+
 .topnav{
     background-color: gray;
 
@@ -8,6 +14,13 @@
     align-items: center;
     justify-content: space-between;
 
+}
+
+.topnav-title{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 800;
 }
 
 .topnav-image{
@@ -24,12 +37,14 @@
 
 .topnav-list a{
     color: white;
-    padding: 25px;
+    padding: 20px;
 
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    transition: 0.4s;
 }   
 
 .topnav-list a:hover{
-    background: darkgray;
+    border-bottom: 5px solid black;
 }
