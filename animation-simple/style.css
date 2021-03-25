@@ -8,10 +8,11 @@ body{
     height: 100vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(86, 233, 189);
+    background-color: #67595E;
 }
 
 .shaking{
@@ -19,15 +20,20 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    background-color: white;
-    border-top: gray;
+    background-color:  #EED6D3;
+    border-top: 3px #A49393 solid;
     border-radius: 10px;
+
     height: 50px;
     width: 300px;
+    margin-bottom: 10px;
     
+    transition: ease;
+    animation: shake 0.8s ease ;
 }
 
-.shaking input{
+.shaking input
+{
     border: none;
     background: none;
     height: 100%;
@@ -35,6 +41,25 @@ body{
     flex: 1;
 }
 
+#button-login{
+    font-size: 16px;
+    font-weight: 800;
+    color: #67595E;
+    transition: 0.3s ease;
+}
+
+#button-login:hover{
+    cursor: pointer;
+    font-size: 18px;
+}
+
 .shaking i{
     padding: 10px;
+}
+
+@keyframes shae{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(8deg);}
+    75%{transform: rotate(-8deg);}
+    100%{transform: rotate(0deg);}
 }
