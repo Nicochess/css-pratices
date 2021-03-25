@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(86, 233, 189);
+}
+
+.shaking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    border-top: gray;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    
+}
+
+.shaking input{
+    border: none;
+    background: none;
+    height: 100%;
+    outline: none;
+    flex: 1;
+}
+
+.shaking i{
+    padding: 10px;
+}
