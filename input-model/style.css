@@ -38,10 +38,14 @@ body{
     background: none;
     outline: 0;
 
-    transition: 0.4s ease;
+    transition: 0.2s;
 }
 
 .input-texto:focus{
     border-color: darkmagenta;
-    border-width: 0 0 4px;
+    border-width: 0 0 3px;
+}
+
+.campo-form:hover{
+    background-color: rgb(214, 214, 214);
 }
