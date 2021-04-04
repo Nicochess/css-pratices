@@ -63,3 +63,38 @@ body{
 
     color: white;
 }
+
+.send{
+    border: 0;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background: linear-gradient(45deg ,black 60%, rgb(219, 214, 214));
+    color: white;
+
+    font-family: sans-serif;
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+[data-tooltip]{
+    position: relative;
+    
+}
+
+[data-tooltip]:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    color: gray;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.send:hover::after{
+    
+}
