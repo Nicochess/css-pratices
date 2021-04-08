@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+}
+
+table {
+  width: 40vw;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-size: 20px;
+}
+
+table td, table th {
+  padding: 8px;
+  border: 1px solid black;
+  background: #dbdbdb;
+}
+
+table th {
+  background: gray;
+}
+/*# sourceMappingURL=style.css.map */
