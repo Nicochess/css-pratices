@@ -32,9 +32,9 @@ input[type="checkbox"]{
     position: relative;
     display: inline-block;
 
-    border: 2px solid rgb(153, 151, 151);
+    border: 2px solid rgb(131, 131, 131);
     border-radius: 18px;
-    background: linear-gradient(180deg, #969595 0%, #1F2027 100%);
+    background: linear-gradient(180deg, rgb(131, 131, 131) 0%, rgb(32, 31, 31) 100%);
     
     &::after{
         content: '';
@@ -49,11 +49,12 @@ input[type="checkbox"]{
         height: 25px;
 
         border-radius: 50%;
-        transition: all ease .4s;
+        transition: all ease .3s;
         
     }
     &:checked{
-        border-color: rgb(65, 219, 4);
+        border-color: rgb(139, 226, 104);
+        background: rgb(139, 226, 104);
         &::after{
             transform: translateX(20px);
         }

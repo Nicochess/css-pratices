@@ -37,10 +37,10 @@ input[type="checkbox"] {
   width: 55px;
   position: relative;
   display: inline-block;
-  border: 2px solid #999797;
+  border: 2px solid #838383;
   border-radius: 18px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#969595), to(#1F2027));
-  background: linear-gradient(180deg, #969595 0%, #1F2027 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#838383), to(#201f1f));
+  background: linear-gradient(180deg, #838383 0%, #201f1f 100%);
 }
 
 .checkbox__input::after {
@@ -52,12 +52,13 @@ input[type="checkbox"] {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  -webkit-transition: all ease .4s;
-  transition: all ease .4s;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .checkbox__input:checked {
-  border-color: #41db04;
+  border-color: #8be268;
+  background: #8be268;
 }
 
 .checkbox__input:checked::after {
