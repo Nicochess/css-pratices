@@ -35,6 +35,8 @@ input[type="checkbox"]{
     border: 2px solid rgb(131, 131, 131);
     border-radius: 18px;
     background: linear-gradient(180deg, rgb(131, 131, 131) 0%, rgb(32, 31, 31) 100%);
+
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.363);
     
     &::after{
         content: '';
