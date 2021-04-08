@@ -1,0 +1,61 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include flexCenter(column);
+
+    background-color: black;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+.checkbox__input{
+    height: 35px;
+    width: 55px;
+
+    position: relative;
+    display: inline-block;
+
+    border: 2px solid rgb(153, 151, 151);
+    border-radius: 18px;
+    background: linear-gradient(180deg, #969595 0%, #1F2027 100%);
+    
+    &::after{
+        content: '';
+
+        position: absolute;
+        top: 3px;
+        left: 3px;
+
+        background: white;
+
+        width: 25px;
+        height: 25px;
+
+        border-radius: 50%;
+        transition: all ease .4s;
+        
+    }
+    &:checked{
+        border-color: rgb(65, 219, 4);
+        &::after{
+            transform: translateX(20px);
+        }
+    }
+}
