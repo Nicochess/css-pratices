@@ -21,6 +21,10 @@ body{
 }
 
 .menutop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     &__title{
         font-size: 90px;
         margin-bottom: 10px;
@@ -52,13 +56,13 @@ body{
     nav{
         background: $navBgColor;
         padding: 16px;
-        border-radius: 10px;
+        border-radius: 15px;
         ul{
             list-style: none;
             display: flex;
             justify-content: space-evenly;
             li{
-                margin: 10px;
+                margin: 10px 20px;
                 a{
                     text-decoration: none;
                     font-size: 30px;
