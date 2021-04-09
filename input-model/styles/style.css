@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  width: 50%;
+  width: 30%;
   padding: 1em;
   border: 3px solid black;
   font-family: 'Inter', sans-serif;
@@ -58,7 +58,7 @@ body {
   margin: 0.5em 0;
   padding: 0.5em;
   border: 2px solid black;
-  width: 70%;
+  width: 90%;
   background: white;
   position: relative;
 }
@@ -131,7 +131,7 @@ body {
   content: "Insira seu nome";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0.5em;
   font-weight: 700;
 }
 
