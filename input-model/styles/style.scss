@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.container{
+    width: 50%;
+    padding: 1em;
+    border: 3px solid black;
+    font-family: 'Inter', sans-serif;
+
+    i{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    &__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-end;
+
+        margin-bottom: 1.5em;
+    }
+
+    &__input{
+        margin: 0.5em 0;
+        padding: 0.5em;
+        border: 2px solid black;
+        width: 70%;
+        background: white;
+        position: relative;
+        &::placeholder{
+            font-weight: 700;
+            color: purple;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            transition: all .4s ease;
+        }
+
+        &:focus-within{
+            &::placeholder{
+                opacity: 0;
+                transition: all 0s ease;
+            }
+        }
+        
+    }
+    &__label{
+        position: relative;
+        &::before{
+            content: "Insira seu nome";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 700;
+            
+        }
+
+        &:focus-within{
+            &::before{
+                transform: translateY(-25px);
+                font-size: 16px;
+                color: purple;
+                transition: all 0.4s ease;
+            }
+        }
+        
+    }
+}
