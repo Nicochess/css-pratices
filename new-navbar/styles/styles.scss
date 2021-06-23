@@ -1,20 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-:root{
-    font-family: 'Open Sans', sans-serif;
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+:root {
+  font-family: "Open Sans", sans-serif;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
 }
 
-body{
-    color: black;
-    background-color: white;
-    margin: 0;
+html {
+  font-size: 62.5%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(79, 39, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+main {
+  margin-left: 10rem;
+  padding: 1rem;
+}
+
+.fas {
+  font-size: 5rem;
+}
+
+.navbar {
+  width: 10rem;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 0.2s ease;
+
+  :hover{
+    color: red;
+  }
+
+  &__list {
+    list-style: none;
     padding: 0;
-}
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 
-main{
+    &--item {
+      width: 100%;
+      &:last-child {
+        margin-top: auto;
+      }
+    }
 
+    &--link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 8rem;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+  }
 }
